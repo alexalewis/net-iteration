@@ -48,7 +48,7 @@ namespace DotnetIteration
       */
     public static IEnumerable<string> StringyIndexes(List<string> data)
     {
-      return data.Select((item, index) => ($"{item} is at index of {index} "));
+      return data.Select((item, index) => ($"{item} is at index {index}"));
 
     }
     /*
@@ -84,7 +84,7 @@ namespace DotnetIteration
       */
     public static IEnumerable<string> BestMovieOfTheYear(List<Movie> data, int year)
     {
-      return data.Where(movie => movie.Score > 90 && movie.Year == year).Select(movie => $"{movie.Name}");
+      return data.Where(movie => movie.Score > 90 && movie.Year == year).Select(movie => movie.Name);
     }
 
     /*
@@ -129,6 +129,18 @@ namespace DotnetIteration
     public static bool SomeoneToLove(List<string> data)
     {
       return data.Any(characters => characters.Length == 4);
+
+      //return data.Where(item => item.Length == 4).Count() > 4;
+
+      // var isFound = false;
+      //foreach (var item in data) 
+      {
+        //if (item.Length == 4) 
+        {
+          //return = true;
+        }
+      }
+      //return isFound;
     }
   }
 

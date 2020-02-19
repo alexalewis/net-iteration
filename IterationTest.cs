@@ -24,7 +24,7 @@ namespace DotnetIteration
       Assert.Equal(expected, Iteration.Double(data));
     }
 
-    [Fact(Skip = "Remove to run test")]
+    [Fact]
     public void StringyIndexes()
     {
       var data = new List<string> { "how", "now", "brown", "cow" };
